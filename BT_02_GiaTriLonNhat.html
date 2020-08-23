@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    // let index = 0;
+    for (let i = 0; i < 3; i++) {
+        let num = parseInt(prompt("Nhập phần tử thứ " + (i + 1)));
+        if (arr.includes(num)) {
+           alert("Phần tử đã tồn tại, mời nhập lại");
+            i--;
+        } else {
+            arr.push(num);
+        }
+        // for (let j = 0; j < arr.length - 1; j++) {
+        //     while (arr[i] === arr[j]) {
+            // }
+        // }
+    }
+    let max = arr[0];
+    arr.forEach(findMaxNumber);
+
+    function findMaxNumber(number) {
+        if (max < number) {
+            max = number;
+        }
+    }
+    // for (let i = 1; i < arr.length; i++) {
+    //     if (max < arr[i]) {
+    //         // index += 1
+    //         max = arr[i];
+    //     }
+    // }
+    document.write(arr.toString());
+    document.write("So lon nhat la: " + max + ", vi tri lon nhat la: " + arr.indexOf(max));
+
+</script>
+</body>
+</html>

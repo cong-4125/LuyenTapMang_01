@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [0,3,4,6,12,-13,];
+       let v = parseInt(prompt("enter a number"));
+       if (arr.indexOf(v) !== -1) {
+           arr.splice(arr.indexOf(v),1);
+           arr.push(0);
+       }
+       document.write(arr);
+</script>
+
+</body>
+</html>

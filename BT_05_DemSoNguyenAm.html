@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let index = 0;
+    for (i = 0;i < 6;i++) {
+        arr[i] = parseInt(prompt('Nhap phan tu thu :' + (i + 1)));
+        if (arr[i] < 0) {
+            index += 1
+        }
+    }
+        document.write(arr + "<br>" + 'so nguyen am la:' + index);
+
+
+</script>
+</body>
+</html>
